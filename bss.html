@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="src/dist/semantic.min.css">
+		<link rel="stylesheet" href="src/custom.css">
+		<link rel="stylesheet" href="src/iziModal.min.css">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+    <title>One Asia Center</title>
+	</head>
+
+	<body>
+		<!--HERO-->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="src/img/hero.png">
+
+				<!--BANNER CONTENT-->
+			<div class="ui grid">
+					<div class="four column row">
+						<div class="left floated column" id="logo"><img src="src/img/oac+logo.png"></div>
+					</div>
+					<div id="hero-content"><p>Take your business to the next level.</p></div>						
+				</div>	
+		</div>
+
+		<!--LIL NAV-->
+		<div class="ui three top attached steps">
+  			<a class="step" href="services.html">
+    			<i class="settings icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Services</div>
+      					<div class="description">Choose from our services</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="testimonials.html">
+    			<i class="quote left icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Testimonials</div>
+      					<div class="description">Hear from the people who loved us</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="business-resources.html">
+    			<i class="info icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Business Resources</div>
+      					<div class="description">Helping you start a business</div>
+    				</div>
+  			</a>
+		</div>
+
+    <!--SERVICES MENU-->
+    <div class="ui grid">
+    <div class="four wide column">
+     <div class="ui secondary vertical pointing menu">
+      <h4>Our Services:</h4>
+      <a class="item" href="services.html">Serviced Offices</a>
+      <a class="item" href="virtual.html">Virtual Offices</a>
+      <a class="item" href="meeting.html">Meeting Rooms</a>
+      <a class="item" href="training.html">Training & Events Facilities</a>
+      <a class="active item" href="bss.html">Business Support Services</a>
+     </div></div>
+   
+
+   <!--MODAL-->
+   <div id="modal" class="iziModal" data-izimodal-transitionin="comingIn" data-izimodal-transitionout="comingOut">
+      <h4 id="manson">Room Availabilty:</h4>
+      <form class="ui form" >
+                    <div class="field">
+                      <select name="roomname">
+                        <option value="eventRoom">Events Room</option>
+                        <option value="trainingFacility">Training Facility</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label>Check in:</label>
+                      <input type="date" name="checkin"/>
+                      <label>Check out:</label>
+                      <input type="date" name="checkout"/>
+                    </div>
+                    <div class="ui buttons">
+                      <button class="ui button">Cancel</button>
+                      <div class="or"></div>
+                      <button class="ui positive button"><a href="form.html" id="form">Proceed</a></button>
+                  </div>
+            </form>
+		</div> <!--MODAL-->
+
+	<div class="ten wide column">
+     <br/>
+      <div class="ui horizontal divider"><h4>Business Support Services</h4></div>
+      <br/><br/>
+      <h5>Recruitment </h5>
+      <p>Finding and selecting the right candidate in this highly competitive market can be challenging. We have an experienced sourcing and recruiting professional in-house as well as partnerships with the Philippines top recruiting firms and providing expertise and guidance on market salary and benefits for your positions.</p>
+
+      <h5>Payroll</h5>
+      <p>We provide full service payroll services to ensure on-time and accurate employee payment as well as compliance to government withholding and reporting requirements. </p>
+
+      <h5>Information Technology </h5>
+      <p>Whether in the office or accessing our systems remotely, if you encounter an IT issues, we have an IT professional that can trouble shoot and solve your IT issues. </p>
+
+      <h5>Procurement </h5>
+      <p>Allow our administrative staff to source and purchase your office supplies, meeting supplies, catering needs for example. Enjoy the convenience of one monthly billing. Accounting – We offer book-keeping, accounts payable, collections and financial reporting services by our in-house staff and accredited accounting partner.</p>
+
+      <h5>Tax </h5>
+      <p>If you have a Philippine legal entity, allow our in-house staff and accredited accounting partner manage your Bureau of Internal Revenue filing requirements and tax planning.</p>
+
+      <br/>
+      <div class="ui button" tabindex="0"><a href="contact.html" id="contactbutton">Get Support</a></div>
+        
+      
+  	</div> <!--TEN-->
+
+  </div> <!--UI GRID-->
+  <br/>
+      <!--MAP-->
+  <br/><br/><br/>
+  <center><img src="src/img/map.png" id="map"></center>
+
+  <!--FOOTER-->
+  <footer>
+    <center>
+    <div class="copy">&copy; One Asia Center - All Rights Reserved</div>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="#" id="footer"><i class="facebook icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="instagram icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="linkedin icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="twitter icon"></i></a></li>
+    </ul>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="about.html" id="footer">About</a></li>
+      <li class="footer-link"><a href="contact.html" id="footer">Contact Us</a></li>
+    </ul>
+  </center>
+  </footer>
+
+  <!--SCRIPT-->
+  <script src="src/jquery.js"></script>
+  <script src="src/dist/semantic.min.js"></script>
+  <script src="src/parallax.min.js"></script>
+  <script src="src/iziModal.min.js"></script>
+  <script>
+     $("#modal").iziModal({
+        overlayClose: true,
+        width: 600,
+        autoOpen: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)',
+      });
+    $(document).on('click', '.trigger', function (event) {
+          event.preventDefault();
+      $('#modal').iziModal('open');
+          });
+  </script>
+  <SCRIPT>
+    $('.tabular.menu .item').tab();
+  </script>
+  <script>
+    $('.ui.checkbox')
+        .checkbox()
+      ;
+  </script>
+  <script>
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+        });
+  </script>
+  <script>$('.activating.element')
+  .popup()
+;</script>
+<script>
+  $('.ui.dropdown')
+  .dropdown()
+;
+</script>
+
+  </body>
+
+</html>

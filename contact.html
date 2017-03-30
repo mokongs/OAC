@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="src/dist/semantic.min.css">
+		<link rel="stylesheet" href="src/custom.css">
+		<link rel="stylesheet" href="src/iziModal.min.css">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+    <title>One Asia Center</title>
+	</head>
+
+	<body>
+		<!--HERO-->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="src/img/hero.png">
+
+				<!--BANNER CONTENT-->
+			<div class="ui grid">
+					<div class="four column row">
+						<div class="left floated column" id="logo"><img src="src/img/oac+logo.png"></div>
+					</div>
+					<div id="hero-content"><p>Take your business to the next level.</p></div>						
+				</div>	
+		</div>
+
+		<!--LIL NAV-->
+		<div class="ui three top attached steps">
+  			<a class="step" href="services.html">
+    			<i class="settings icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Services</div>
+      					<div class="description">Choose from our services</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="testimonials.html">
+    			<i class="quote left icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Testimonials</div>
+      					<div class="description">Hear from the people who loved us</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="business-resources.html">
+    			<i class="info icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Business Resources</div>
+      					<div class="description">Helping you start a business</div>
+    				</div>
+  			</a>
+		</div>
+
+    <!--CONTACT US-->
+    <br/><br/>
+    <div class="ui grid">
+      <div class="three wide column"></div>
+      <div class="ten wide column">
+    <div class="ui horizontal divider"><h3>Contact Us</h3></div>
+    <br/><br/>
+      <form class="ui form">
+  <div class="inline fields">
+    <div class="eight wide field">
+      <label>Name</label>
+      <input type="text" placeholder="First Name" name="firstname">
+    </div>
+    <div class="eight wide field">
+      <input type="text" placeholder="Last Name" name="lastname">
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <input type="text" name="email" placeholder="Email">
+  </div>
+
+  <div class="field">
+    <label>Contact Number</label>
+    <input type="text" name="contactnumber" placeholder="Contact Number">
+  </div>
+
+  <div class="field">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+  </div>
+
+  <div class="field">
+      <label>Where did you hear about us?</label>
+      <select name="where">
+        <option value="google">Google</option>
+        <option value="facebook">Facebook</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+
+  <input class="ui button trigger" value="Submit" type="submit" tabindex="0">
+
+
+  
+</form>
+
+
+<!--MODAL-->
+   <div id="modal" class="iziModal" data-izimodal-transitionin="comingIn" data-izimodal-transitionout="comingOut">
+      <h4 id="manson">Success!</h4>
+      <p id="manson">Your information has been submitted!<br/>
+        Thank you.
+      </p>
+      <br/>
+    </div> <!--MODAL-->
+
+  </div>
+    <div class="three wide column"></div>
+    </div>
+
+     <!--MAP-->
+  <br/><br/><br/>
+  <center><img src="src/img/map.png" id="map"></center>
+
+  <!--FOOTER-->
+  <footer>
+    <center>
+    <div class="copy">&copy; One Asia Center - All Rights Reserved</div>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="#" id="footer"><i class="facebook icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="instagram icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="linkedin icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="twitter icon"></i></a></li>
+    </ul>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="about.html" id="footer">About</a></li>
+      <li class="footer-link"><a href="contact.html" id="footer">Contact Us</a></li>
+    </ul>
+  </center>
+  </footer>
+
+  <!--SCRIPT-->
+  <script src="src/jquery.js"></script>
+  <script src="src/dist/semantic.min.js"></script>
+  <script src="src/parallax.min.js"></script>
+  <script src="src/iziModal.min.js"></script>
+  <script>
+     $("#modal").iziModal({
+        overlayClose: true,
+        width: 600,
+        autoOpen: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)',
+      });
+    $(document).on('click', '.trigger', function (event) {
+          event.preventDefault();
+      $('#modal').iziModal('open');
+          });
+  </script>
+  <SCRIPT>
+    $('.tabular.menu .item').tab();
+  </script>
+  <script>
+    $('.ui.checkbox')
+        .checkbox()
+      ;
+  </script>
+  <script>
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+        });
+  </script>
+  <script>$('.activating.element')
+  .popup()
+;</script>
+<script>
+  $('.ui.dropdown')
+  .dropdown()
+;
+</script>
+
+  </body>
+
+</html>
+

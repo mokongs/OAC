@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="src/dist/semantic.min.css">
+		<link rel="stylesheet" href="src/custom.css">
+		<link rel="stylesheet" href="src/iziModal.min.css">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+    <title>One Asia Center</title>
+	</head>
+
+	<body>
+		<!--HERO-->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="src/img/hero.png">
+
+				<!--BANNER CONTENT-->
+			<div class="ui grid">
+					<div class="four column row">
+						<div class="left floated column" id="logo"><img src="src/img/oac+logo.png"></div>
+					</div>
+					<div id="hero-content"><p>Take your business to the next level.</p></div>						
+				</div>	
+		</div>
+
+		<!--LIL NAV-->
+		<div class="ui three top attached steps">
+  			<a class="step" href="services.html">
+    			<i class="settings icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Services</div>
+      					<div class="description">Choose from our services</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="testimonials.html">
+    			<i class="quote left icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Testimonials</div>
+      					<div class="description">Hear from the people who loved us</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="business-resources.html">
+    			<i class="info icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Business Resources</div>
+      					<div class="description">Helping you start a business</div>
+    				</div>
+  			</a>
+		</div>
+
+    <!--TESTIMONIALS-->
+    <br/><br/>
+    <div class="ui grid">
+      <div class="three wide column"></div>
+      <div class="ten wide column">
+        <div class="ui horizontal divider"><h3>Testimonials</h3></div><br/>
+        <div class="item">
+    <div class="image">
+      <img src="src/img/david-testimonial.jpg">
+    </div><br/>
+    <div class="content">
+      <a class="header" id="testiheader">David Caldwell, ProSource</a>
+      <div class="meta">
+        <span>June 28, 2016</span>
+      </div><br/>
+      <div class="description">
+        <p>Being in the consultancy industry, I am always out of the office and meeting with my clients here and there. Having subscribed to One Asia Center's Virtual Office services keep me worry-free and I don't have to spend time thinking about missing important phone calls. I can even access and receive voicemails and fax on the go!</p>
+      </div>
+      <br/>
+    </div>
+  </div>
+  <br/><br/>
+  <a href="carlos.html">Caren Carlos, Caren Carlos Photography</a>
+  <a href="rovere.html" style="margin-left: 50px;">Danielle Rovere, Microventures</a>
+      </div>
+
+    </div> <!--UI GRID-->
+
+
+
+
+      <!--MAP-->
+  <br/><br/><br/>
+  <center><img src="src/img/map.png" id="map"></center>
+
+  <!--FOOTER-->
+  <footer>
+    <center>
+    <div class="copy">&copy; One Asia Center - All Rights Reserved</div>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="#" id="footer"><i class="facebook icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="instagram icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="linkedin icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="twitter icon"></i></a></li>
+    </ul>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="about.html" id="footer">About</a></li>
+      <li class="footer-link"><a href="contact.html" id="footer">Contact Us</a></li>
+    </ul>
+  </center>
+  </footer>
+
+  <!--SCRIPT-->
+  <script src="src/jquery.js"></script>
+  <script src="src/dist/semantic.min.js"></script>
+  <script src="src/parallax.min.js"></script>
+  <script src="src/iziModal.min.js"></script>
+  <script>
+     $("#modal").iziModal({
+        overlayClose: true,
+        width: 600,
+        autoOpen: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)',
+      });
+    $(document).on('click', '.trigger', function (event) {
+          event.preventDefault();
+      $('#modal').iziModal('open');
+          });
+  </script>
+  <SCRIPT>
+    $('.tabular.menu .item').tab();
+  </script>
+  <script>
+    $('.ui.checkbox')
+        .checkbox()
+      ;
+  </script>
+  <script>
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+        });
+  </script>
+  <script>$('.activating.element')
+  .popup()
+;</script>
+<script>
+  $('.ui.dropdown')
+  .dropdown()
+;
+</script>
+
+  </body>
+
+</html>
+
+

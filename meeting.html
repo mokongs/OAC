@@ -1,0 +1,207 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="src/dist/semantic.min.css">
+		<link rel="stylesheet" href="src/custom.css">
+		<link rel="stylesheet" href="src/iziModal.min.css">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+    <title>One Asia Center</title>
+	</head>
+
+	<body>
+		<!--HERO-->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="src/img/hero.png">
+
+				<!--BANNER CONTENT-->
+			<div class="ui grid">
+					<div class="four column row">
+						<div class="left floated column" id="logo"><img src="src/img/oac+logo.png"></div>
+					</div>
+					<div id="hero-content"><p>Take your business to the next level.</p></div>						
+				</div>	
+		</div>
+
+		<!--LIL NAV-->
+		<div class="ui three top attached steps">
+  			<a class="step" href="services.html">
+    			<i class="settings icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Services</div>
+      					<div class="description">Choose from our services</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="testimonials.html">
+    			<i class="quote left icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Testimonials</div>
+      					<div class="description">Hear from the people who loved us</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="business-resources.html">
+    			<i class="info icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Business Resources</div>
+      					<div class="description">Helping you start a business</div>
+    				</div>
+  			</a>
+		</div>
+
+    <!--SERVICES MENU-->
+    <div class="ui grid">
+    <div class="four wide column">
+     <div class="ui secondary vertical pointing menu">
+      <h4>Our Services:</h4>
+      <a class="item" href="services.html">Serviced Offices</a>
+      <a class="item" href="virtual.html">Virtual Offices</a>
+      <a class="active item" href="meeting.html">Meeting Rooms</a>
+      <a class="item" href="training.html">Training & Events Facilities</a>
+      <a class="item" href="bss.html">Business Support Services</a>
+     </div></div>
+   
+
+   <!--MODAL-->
+   <div id="modal" class="iziModal" data-izimodal-transitionin="comingIn" data-izimodal-transitionout="comingOut">
+      <h4 id="manson">Room Availabilty:</h4>
+      <form class="ui form" action="list.php" method="post">
+                    <div class="field">
+                      <select name="roomname">
+                        <option value="Meeting Room">Meeting Room</option>
+                        <option value="Corner Room">Corner Room</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label>Check in:</label>
+                      <input type="date" name="checkin"/>
+                      <label>Check out:</label>
+                      <input type="date" name="checkout"/>
+                    </div>
+                  <input type="submit" class="ui positive button" onclick="myFunction()" value="Add to list">
+            </form>
+		</div> <!--MODAL-->
+
+	<div class="ten wide column">
+     <br/>
+      <div class="ui horizontal divider"><h4>Meeting Rooms</h4></div>
+      <br/><br/>
+      <div class="serviced-offices">
+        <p>Aside from private and shared serviced offices, One Asia Center provides meeting rooms that are perfect for presentations that seal deals and meetings that strengthen your business ties. Our top of the line meeting rooms are tastefully furnished and equipped with the tools you need to take that step forward.</p>
+
+        <br/>
+        <!--PICTURES-->
+        <div class="ui special cards">
+  			<div class="ui card" id="lilcard2">
+    			<div class="blurring dimmable image">
+      			<div class="ui dimmer">
+        		<div class="content">
+          		<div class="center">
+            	<a href="#" class="ui inverted button trigger">RESERVE</a>
+          </div>
+        </div>
+      </div>
+      <img src="src/img/thumb-mr+1.jpg">
+    </div>
+    <div class="content">
+      <a class="header" id="header">Meeting Room</a>
+    </div>
+  </div>
+
+  	<div class="ui card" id="lilcard2">
+    			<div class="blurring dimmable image">
+      			<div class="ui dimmer">
+        		<div class="content">
+          		<div class="center">
+            	<a href="#" class="ui inverted button trigger">RESERVE</a>
+          </div>
+        </div>
+      </div>
+      <img src="src/img/Corner.jpg">
+    </div>
+    <div class="content">
+      <a class="header" id="header">Corner Room</a>
+    </div>
+  </div>
+
+       </div>  <!--CARD-->
+      </div> <!--SERVICED OFFICES-->
+
+      <p>Meeting rooms have the following inclusions:</p>
+      <ul>
+      	<li>one convenient invoice;</li>
+      	<li>free, dependable high-speed uninterrupted internet;</li>
+      	<li>use of office phone lines for local calls;</li>
+      	<li>use of office machines at a 20% discounted rate;</li>
+      	<li>free access to the pantry.</li>
+      </ul>
+  	</div> <!--TEN-->
+
+  </div> <!--UI GRID-->
+
+      <!--MAP-->
+  <br/><br/><br/>
+  <center><img src="src/img/map.png" id="map"></center>
+
+  <!--FOOTER-->
+  <footer>
+    <center>
+    <div class="copy">&copy; One Asia Center - All Rights Reserved</div>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="#" id="footer"><i class="facebook icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="instagram icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="linkedin icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="twitter icon"></i></a></li>
+    </ul>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="about.html" id="footer">About</a></li>
+      <li class="footer-link"><a href="contact.html" id="footer">Contact Us</a></li>
+    </ul>
+  </center>
+  </footer>
+
+  <!--SCRIPT-->
+  <script src="src/jquery.js"></script>
+  <script src="src/dist/semantic.min.js"></script>
+  <script src="src/parallax.min.js"></script>
+  <script src="src/iziModal.min.js"></script>
+  <script>
+     $("#modal").iziModal({
+        overlayClose: true,
+        width: 600,
+        autoOpen: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)',
+      });
+    $(document).on('click', '.trigger', function (event) {
+          event.preventDefault();
+      $('#modal').iziModal('open');
+          });
+  </script>
+  <SCRIPT>
+    $('.tabular.menu .item').tab();
+  </script>
+  <script>
+    $('.ui.checkbox')
+        .checkbox()
+      ;
+  </script>
+  <script>
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+        });
+  </script>
+  <script>$('.activating.element')
+  .popup()
+;</script>
+<script>
+  $('.ui.dropdown')
+  .dropdown()
+;
+</script>
+<script>
+  function myFunction(){
+    alert("Successfully added to list!");
+  }
+</script>
+
+  </body>
+
+</html>

@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="src/dist/semantic.min.css">
+		<link rel="stylesheet" href="src/custom.css">
+		<link rel="stylesheet" href="src/iziModal.min.css">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+    <title>One Asia Center</title>
+
+    <style>
+      .ui.form.segment {
+        width: 900px;
+
+      }
+    </style>
+	</head>
+
+	<body>
+		
+
+		<!--FORM-->
+		<div class="ui grid">
+    <div class="three wide column"></div>
+    <div class="ten wide column">
+      <h3 id="header">Reservation</h3>
+      <form class="ui form segment" action="form.php" method="post">
+        <p id="form-header">Personal Information</p>
+        <div class="three fields">
+          <div class="field">
+            <label>First Name</label>
+            <input placeholder="First Name" name="firstname" type="text">
+          </div>
+          
+          <div class="field">
+            <label>Middle Name</label>
+            <input placeholder="Middle Name" name="middlename" type="text">
+          </div>
+          
+          <div class="field">
+            <label>Last Name</label>
+            <input placeholder="Last Name" name="lastname" type="text">
+          </div>
+        </div>
+        
+        <div class="three fields">
+          <div class="eight wide field">
+            <label>Complete Address</label>
+            <input placeholder="Address" name="address" type="text">
+          </div>
+    
+          <div class="four wide field">
+            <label>City</label>
+            <input type="text" name="city" placeholder="City">
+          </div>
+          
+          <div class="four wide field">
+            <label>Country</label>
+            <select class="ui fluid dropdown" name="country">
+                    <option value="">Country</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="England">England</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Holland">Holland</option>
+                    <option value="India">India</option>
+                    <option value="Korea">Korea</option>
+                    <option value="London">London</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+          </div>
+        </div>
+        
+        <div class="two fields">
+          <div class="eight wide field">
+            <label>Email Address</label>
+            <input placeholder="Email" name="email" type="email">
+          </div>
+    
+          <div class="eight wide field">
+            <label>Contact Number</label>
+            <input type="text" name="contactnumber" placeholder="Contact Number">
+          </div>  
+        </div>
+        
+          
+        <div class="ui primary submit button">Submit</div>
+        <div class="ui error message"></div>
+      </form>
+    </div>
+    <div class="three wide column"></div>
+
+  
+	</div> <!--UI GRID-->
+  <br/><br/>
+  <!--FOOTER-->
+  <footer>
+    <center>
+    <div class="copy">&copy; One Asia Center - All Rights Reserved</div>
+    
+  </center>
+  </footer>
+
+  <!--SCRIPT-->
+  <script src="src/jquery.js"></script>
+  <script src="src/dist/semantic.min.js"></script>
+  <script src="src/parallax.min.js"></script>
+  <script src="src/iziModal.min.js"></script>
+  <script>
+     $("#modal").iziModal({
+        overlayClose: true,
+        width: 600,
+        autoOpen: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)',
+      });
+    $(document).on('click', '.trigger', function (event) {
+          event.preventDefault();
+      $('#modal').iziModal('open');
+          });
+  </script>
+  <SCRIPT>
+    $('.tabular.menu .item').tab();
+  </script>
+  <script>
+    $('.ui.checkbox')
+        .checkbox()
+      ;
+  </script>
+  <script>
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+        });
+  </script>
+  <script>$('.activating.element')
+  .popup()
+;</script>
+<script>
+  $('.ui.dropdown')
+  .dropdown()
+;
+</script>
+
+  </body>
+
+</html>

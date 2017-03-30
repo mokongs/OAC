@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="src/dist/semantic.min.css">
+		<link rel="stylesheet" href="src/custom.css">
+		<link rel="stylesheet" href="src/iziModal.min.css">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+    <title>One Asia Center</title>
+	</head>
+
+	<body>
+		<!--HERO-->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="src/img/hero.png">
+
+				<!--BANNER CONTENT-->
+			<div class="ui grid">
+					<div class="four column row">
+						<div class="left floated column" id="logo"><img src="src/img/oac+logo.png"></div>
+					</div>
+					<div id="hero-content"><p>Take your business to the next level.</p></div>						
+				</div>	
+		</div>
+
+		<!--LIL NAV-->
+		<div class="ui three top attached steps">
+  			<a class="step" href="services.html">
+    			<i class="settings icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Services</div>
+      					<div class="description">Choose from our services</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="testimonials.html">
+    			<i class="quote left icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Testimonials</div>
+      					<div class="description">Hear from the people who loved us</div>
+    				</div>
+  			</a>
+  
+  			<a class="step" href="business-resources.html">
+    			<i class="info icon"></i>
+    				<div class="content">
+      					<div class="title lilnavtitle">Business Resources</div>
+      					<div class="description">Helping you start a business</div>
+    				</div>
+  			</a>
+		</div>
+
+    <!--TESTIMONIALS-->
+    <br/><br/>
+    <div class="ui grid">
+      <div class="three wide column"></div>
+      <div class="ten wide column">
+        <div class="ui horizontal divider"><h3>Testimonials</h3></div><br/>
+        <div class="item">
+    <div class="image">
+      <img src="src/img/roberto-testimonial.jpg">
+    </div><br/>
+    <div class="content">
+      <a class="header" id="testiheader">Roberto Dimayuga, Marketing Consultant</a>
+      <div class="meta">
+        <span>June 28, 2016</span>
+      </div><br/>
+      <div class="description">
+        <p>As a marketing and social media marketing consultant I tried working from home but there is the obvious problem of focusing on my business. In order for my business to succeed I needed to separate it from my personal life and my family has to understand that too. </p>
+        <p>I found working at One Asia Center to be the ideal solution because of the professional office environment. People like me just come here to focus on their work. I enjoy security. I can just leave my laptop and mobile phone and know that nobody will touch it. I can meet with my clients in a well appointed meeting room without having to invest on super fast internet connection, projector, photo copier and all the maintenance cost that goes with them. This is an incredible upgrade from making presentations and contract signing in a coffee shop. It enhances my personal brand. </p>
+        <p>Shared services like accounting, legal, HR and secretary are just at my finger tips. When I am out someone receives my calls and manages my parcels.</p>
+      </div>
+      <br/>
+    </div>
+  </div>
+  <br/><br/>
+  <a href="omar.html">Omar Rahaman, Lutheran World Relief</a>
+  <a href="carlos.html" style="margin-left: 50px;">Caren Carlos, Caren Carlos Photography</a>
+      </div>
+
+    </div> <!--UI GRID-->
+
+
+
+
+      <!--MAP-->
+  <br/><br/><br/>
+  <center><img src="src/img/map.png" id="map"></center>
+
+  <!--FOOTER-->
+  <footer>
+    <center>
+    <div class="copy">&copy; One Asia Center - All Rights Reserved</div>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="#" id="footer"><i class="facebook icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="instagram icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="linkedin icon"></i></a></li>
+      <li class="footer-link"><a href="#" id="footer"><i class="twitter icon"></i></a></li>
+    </ul>
+    <ul class="footer-nav">
+      <li class="footer-link"><a href="about.html" id="footer">About</a></li>
+      <li class="footer-link"><a href="contact.html" id="footer">Contact Us</a></li>
+    </ul>
+  </center>
+  </footer>
+
+  <!--SCRIPT-->
+  <script src="src/jquery.js"></script>
+  <script src="src/dist/semantic.min.js"></script>
+  <script src="src/parallax.min.js"></script>
+  <script src="src/iziModal.min.js"></script>
+  <script>
+     $("#modal").iziModal({
+        overlayClose: true,
+        width: 600,
+        autoOpen: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)',
+      });
+    $(document).on('click', '.trigger', function (event) {
+          event.preventDefault();
+      $('#modal').iziModal('open');
+          });
+  </script>
+  <SCRIPT>
+    $('.tabular.menu .item').tab();
+  </script>
+  <script>
+    $('.ui.checkbox')
+        .checkbox()
+      ;
+  </script>
+  <script>
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+        });
+  </script>
+  <script>$('.activating.element')
+  .popup()
+;</script>
+<script>
+  $('.ui.dropdown')
+  .dropdown()
+;
+</script>
+
+  </body>
+
+</html>
+
+
